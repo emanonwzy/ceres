@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ceres</string>
+
+    <string name="month_pay_out">%1$d月支出</string>
+</resources>
