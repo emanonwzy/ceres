@@ -12,21 +12,32 @@
         android:background="@drawable/divider"
         android:layout_centerHorizontal="true"/>
 
-    <TextView
-        android:id="@+id/budget"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
-        tools:text="月预算\n6000元"
-        android:textColor="@android:color/white"
-        style="@style/Text.P3"
-        android:gravity="center"
-        android:background="@drawable/bg_circle_budget" />
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/budget"/>
+        android:clipToPadding="false"
+        android:paddingTop="140dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#BB333333"
+        android:id="@+id/header">
+        <TextView
+            android:id="@+id/budget"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            tools:text="月预算\n6000元"
+            android:textColor="@android:color/white"
+            style="@style/Text.P3"
+            android:gravity="center"
+            android:background="@drawable/bg_circle_budget" />
+
+    </FrameLayout>
+
+
+
 </RelativeLayout>

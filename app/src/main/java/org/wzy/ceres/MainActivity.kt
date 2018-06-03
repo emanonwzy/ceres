@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
     }
 
-    class Adapter(val ctx: Context): RecyclerView.Adapter<ItemViewHolder>() {
+    class Adapter(private val ctx: Context): RecyclerView.Adapter<ItemViewHolder>() {
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
             val view = LayoutInflater.from(ctx).inflate(R.layout.item_consume, parent, false)
             return ItemViewHolder(view)
