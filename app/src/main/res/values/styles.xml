@@ -8,4 +8,20 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar"></style>
+
+    <style name="Text"></style>
+
+    <style name="Text.P3">
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="Text.P5">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="Text.P1">
+        <item name="android:textSize">11sp</item>
+    </style>
+
 </resources>
